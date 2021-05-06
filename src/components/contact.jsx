@@ -39,30 +39,23 @@ export const Contact = (props) => {
     <div>
       <div id='contact'>
         <div className='container'>
-
-        <div className='col-md-3 col-md-offset-1 contact-info'>
-            <div className='about-text'>
-              <h2>About Us</h2>
+        <div className='col-md-9'>
+            <div className='contact-text'>
+              <h2>DomusVi</h2>
+              <h1>Nos Résidences</h1>
               <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem at magnam reprehenderit natus ab ipsa repudiandae porro distinctio recusandae, officia dicta rerum iure alias harum quod blanditiis dolorum reiciendis quam.               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem at magnam reprehenderit natus ab ipsa repudiandae porro distinctio recusandae, officia dicta rerum iure alias harum quod blanditiis dolorum reiciendis quam.
                 </p>
             </div>
           </div>
-
-
-          <div className='col-md-8'>
+          <div className='col-md-3'>
             <div className='row'>
-              <div className='section-title'>
-                <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
+              <div className=''>
+      
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
-                  <div className='col-md-6'>
+                  <div className='col-md-5'>
                     <div className='form-group'>
                       <input
                         type='text'
@@ -76,7 +69,7 @@ export const Contact = (props) => {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
-                  <div className='col-md-6'>
+                  <div className='col-md-8'>
                     <div className='form-group'>
                       <input
                         type='email'
@@ -104,8 +97,8 @@ export const Contact = (props) => {
                   <p className='help-block text-danger'></p>
                 </div>
                 <div id='success'></div>
-                <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                <button type='submit' className='btn btn-danger'>
+                  Envoyer
                 </button>
               </form>
             </div>
@@ -113,16 +106,7 @@ export const Contact = (props) => {
  
         </div>
       </div>
-      <div id='footer'>
-        <div className='container text-center'>
-          <p>
-            &copy; 2021 Modify by Regina31 React Land Page Template. Design by{' '}
-            <a href='http://' rel='nofollow'>
-             
-            </a>
-          </p>
-        </div>
-      </div>
+    
     </div>
   )
 }

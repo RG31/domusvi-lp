@@ -24,6 +24,15 @@ export const Services = (props) => {
             : 'loading'}
         </div>
       </div>
+      <div id='footer'>
+        <div>
+          <p>
+            &copy; 2021 Created by RG31 React Land Page Template. Design by{' '}
+            <a href='http://' rel='nofollow'>
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
     
   )
