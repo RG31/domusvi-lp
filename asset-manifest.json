@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/domusvi-lp/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/domusvi-lp/static/js/main.d1934e8b.chunk.js",
+    "main.js.map": "/domusvi-lp/static/js/main.d1934e8b.chunk.js.map",
+    "runtime-main.js": "/domusvi-lp/static/js/runtime-main.c3792788.js",
+    "runtime-main.js.map": "/domusvi-lp/static/js/runtime-main.c3792788.js.map",
+    "static/js/2.000d26ad.chunk.js": "/domusvi-lp/static/js/2.000d26ad.chunk.js",
+    "static/js/2.000d26ad.chunk.js.map": "/domusvi-lp/static/js/2.000d26ad.chunk.js.map",
+    "static/js/3.f6d8f98e.chunk.js": "/domusvi-lp/static/js/3.f6d8f98e.chunk.js",
+    "static/js/3.f6d8f98e.chunk.js.map": "/domusvi-lp/static/js/3.f6d8f98e.chunk.js.map",
+    "index.html": "/domusvi-lp/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/domusvi-lp/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.000d26ad.chunk.js.LICENSE.txt": "/domusvi-lp/static/js/2.000d26ad.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/domusvi-lp/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3792788.js",
+    "static/js/2.000d26ad.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.d1934e8b.chunk.js"
+  ]
+}
