@@ -27,12 +27,13 @@ export const Contact = (props) => {
         (result) => {
           console.log(result.text)
           clearState()
+          alert("Email envoyé avec succès!");
         },
         (error) => {
           console.log(error.text)
         },
         // Clear and reset form input fields
-        // e.target.reset()
+        e.target.reset()
       )
   }
   return (
@@ -51,7 +52,6 @@ export const Contact = (props) => {
           <div className='col-md-3'>
             <div className='row'>
               <div className=''>
-      
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
@@ -97,7 +97,7 @@ export const Contact = (props) => {
                   <p className='help-block text-danger'></p>
                 </div>
                 <div id='success'></div>
-                <button type='submit' className='btn btn-danger'>
+                <button type='submit' className='btn btn-custom btn-lg'>
                   Envoyer
                 </button>
               </form>
