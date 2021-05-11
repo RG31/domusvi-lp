@@ -45,7 +45,7 @@ export const Contact = (props) => {
     <div>
       <div id='contact' >
         <div className='container'>
-        <div className='col-md-9'>
+        <div className='col-md-8'>
             <div className='contact-text'>
               <h2>DomusVi</h2>
               <h1>Nos Résidences</h1>
@@ -54,7 +54,7 @@ export const Contact = (props) => {
                 </p>
             </div>
           </div>
-          <div className='col-md-3'>
+          <div className='col-md-4'>
             <div className='row'>
               <div className='f'>
               </div>

@@ -442,6 +442,8 @@ header .intro-text {
 #contact .contact-text{
 	margin-right: 0px;
 	margin-bottom: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 #contact .section-title {
 	margin-bottom: 40px;
@@ -472,7 +474,7 @@ header .intro-text {
 	font-weight: 400;
 }
 #contact form {
-	padding-top: 20px;
+	padding: 20px 0px 0px 30px ;
 }
 #contact .text-danger {
 	color: #cc0033;
