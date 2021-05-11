@@ -8,11 +8,12 @@ import logo from './coeur.png'
 const initialState = {
   name: '',
   email: '',
+  phone: '',
   message: ''
 }
 
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState)
+  const [{ name, email, message, phone }, setState] = useState(initialState)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -22,7 +23,7 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(name, email, message)
+    console.log(name, email, message, phone)
     emailjs
       .sendForm(
         'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'
@@ -56,11 +57,11 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-4'>
             <div className='row'>
-              <div className='f'>
+              <div className=''>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
-                  <div className='col-md-12'>
+                  <div className='col-md-6'>
                     <div className='form-group'>
                       <input
                         type='text'
@@ -74,6 +75,23 @@ export const Contact = (props) => {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
+
+                  <div className='col-md-6'>
+                    <div className='form-group'>
+                      <input
+                        type='texte'
+                        id='surname'
+                        name='surname'
+                        className='form-control'
+                        placeholder='Prénom'
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className='help-block text-danger'></p>
+                    </div>
+                  </div>
+
+
                   <div className='col-md-12'>
                     <div className='form-group'>
                       <input
@@ -88,6 +106,36 @@ export const Contact = (props) => {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
+
+                  <div className='col-md-12'>
+                    <div className='form-group rounded-lg'>
+                      <input
+                        type='text'slected
+                        id='phone'
+                        phone='Téléphone'
+                        className='form-control'
+                        placeholder='Téléphone'
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className='help-block text-danger'></p>
+                    </div>
+                  </div>
+                  
+                  <div className='col-md-12'>
+                    <div className='form-group'>
+                    <label for="inlineFormCustomSelect">Vos préférences pour un séjour : </label>
+                    <select id="inlineFormCustomSelect">
+                      <option selected>Choisissez...</option>
+                      <option value="1">Accueil en urgence</option>
+                      <option value="2">Court séjour</option>
+                      <option value="3">Autres</option>
+                    </select>
+                    </div>
+                  </div>
+
+
+                  
                 </div>
                 <div className='form-group'>
                   <textarea

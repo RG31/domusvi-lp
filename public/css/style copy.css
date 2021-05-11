@@ -434,19 +434,13 @@ header .intro-text {
 	color: #888;
 }
 /* Contact Section */
-
 #contact {
 	padding: 100px 0 60px 0;
 	background: linear-gradient(to right, #492b2f 0%, #dda3a8 100%);
 	color: rgba(255,255,255,.75);
 }
-
-#contact .custom-select mr-sm-2{
-	margin-left: 40px;
-}
-
 #contact .contact-text{
-	margin-right: 70px;
+	margin-right: 0px;
 	margin-bottom: 0px;
 }
 #contact .section-title {
@@ -480,7 +474,6 @@ header .intro-text {
 #contact form {
 	padding-top: 20px;
 }
-
 #contact .text-danger {
 	color: #cc0033;
 	text-align: right;
@@ -508,21 +501,11 @@ header .intro-text {
 }
 
 label {
-	font-size: 17px;
+	font-size: 12px;
 	font-weight: 400;
-	/* font-family: 'Open Sans', sans-serif; */
+	font-family: 'Open Sans', sans-serif;
 	float: left;
 }
-
-select {
-	color:#720a0a;;
-	padding-left: 10px;
-	font-size: 15px;
-	font-weight: 400;
-	/*font-family: 'Open Sans', sans-serif;*/
-	margin-left: 0px;
-}
-
 #contact .form-control {
 	display: block;
 	width: 100%;
@@ -547,16 +530,16 @@ select {
 	box-shadow: transparent;
 }
 .form-control::-webkit-input-placeholder {
-color:#720a0a;
+color: #777;
 }
 .form-control:-moz-placeholder {
-color: rgb(15, 164, 233);
+color: #777;
 }
 .form-control::-moz-placeholder {
 color: #777;
 }
 .form-control:-ms-input-placeholder {
-color: rgb(13, 236, 106);
+color: #777;
 }
 #contact .contact-item {
 	margin: 20px 0;
