@@ -17,7 +17,7 @@ export const Gallery = (props) => {
                   {' '}
                   <a
                     href='img/portfolio/01-large.jpg'
-                    title='Project Title'
+                    title=''
                     data-lightbox-gallery='gallery1'
                   >
                     <div className='hover-text'>

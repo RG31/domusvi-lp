@@ -2,8 +2,6 @@ import { useState } from 'react'
 // npm install emailjs-com --save 
 import emailjs from 'emailjs-com'
 import background from './ehpad.jpeg'
-import logo from './coeur.png'
-//      <img src={logo}></img>
 
 const initialState = {
   name: '',
@@ -31,23 +29,25 @@ export const Contact = (props) => {
         (result) => {
           console.log(result.text)
           clearState()
-          /*alert("Email envoyé avec succès! Merci pour votre confiance");*/
-
+          alert("Email envoyé avec succès! Merci pour votre confiance");
         },
         (error) => {
           console.log(error.text)
         },
         // Clear and reset form input fields
-         e.target.reset()
+        e.target.reset()
       )
   }
   return (
     <div>
-      <div id='contact' >
+      <div id='contact' style={{ 
+      backgroundImage: `url(${background})` ,
+    }} >
         <div className='container'>
         <div className='col-md-9'>
             <div className='contact-text'>
               <h2>DomusVi</h2>
+              <img src="coeur.png" alt="logo"></img>
               <h1>Nos Résidences</h1>
               <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem at magnam reprehenderit natus ab ipsa repudiandae porro distinctio recusandae, officia dicta rerum iure alias harum quod blanditiis dolorum reiciendis quam.               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem at magnam reprehenderit natus ab ipsa repudiandae porro distinctio recusandae, officia dicta rerum iure alias harum quod blanditiis dolorum reiciendis quam.
@@ -56,7 +56,7 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-3'>
             <div className='row'>
-              <div className='f'>
+              <div className=''>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
@@ -67,7 +67,7 @@ export const Contact = (props) => {
                         id='name'
                         name='name'
                         className='form-control'
-                        placeholder='Nom'
+                        placeholder='Name'
                         required
                         onChange={handleChange}
                       />

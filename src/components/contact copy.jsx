@@ -1,15 +1,14 @@
 import { useState } from 'react'
 // npm install emailjs-com --save 
 import emailjs from 'emailjs-com'
-import background from './ehpad.jpeg'
-import logo from './coeur.png'
-//      <img src={logo}></img>
+import background from "./ehpad.jpeg";
 
 const initialState = {
   name: '',
   email: '',
   message: ''
 }
+
 
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState)
@@ -31,19 +30,20 @@ export const Contact = (props) => {
         (result) => {
           console.log(result.text)
           clearState()
-          /*alert("Email envoyé avec succès! Merci pour votre confiance");*/
-
+          alert("Email envoyé avec succès! Merci pour votre confiance");
         },
         (error) => {
           console.log(error.text)
         },
         // Clear and reset form input fields
-         e.target.reset()
+        e.target.reset()
       )
   }
   return (
     <div>
-      <div id='contact' >
+      <div id='contact'style={{ 
+      backgroundImage: `url(${background})` ,
+    }} >
         <div className='container'>
         <div className='col-md-9'>
             <div className='contact-text'>
@@ -56,7 +56,7 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-3'>
             <div className='row'>
-              <div className='f'>
+              <div className=''>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
@@ -67,7 +67,7 @@ export const Contact = (props) => {
                         id='name'
                         name='name'
                         className='form-control'
-                        placeholder='Nom'
+                        placeholder='Name'
                         required
                         onChange={handleChange}
                       />
@@ -111,7 +111,6 @@ export const Contact = (props) => {
  
         </div>
       </div>
-    
     </div>
   )
 }

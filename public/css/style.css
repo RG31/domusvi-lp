@@ -349,7 +349,7 @@ header .intro-text {
 	text-align: center;
 	margin: 0 auto;
 	color: #fff;
-	background: linear-gradient(to right, rgba(99,114,255,0.8) 0%, rgba(92,169,251,0.8) 100%);
+	background: linear-gradient(to right, #8f3810 0%, #fb5c5c 100%);
 	padding: 30% 0 0 0;
 	height: 100%;
 	width: 100%;
@@ -499,6 +499,7 @@ header .intro-text {
 	color: #1f386e;
 	background: #fff;
 }
+
 label {
 	font-size: 12px;
 	font-weight: 400;
