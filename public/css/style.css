@@ -439,8 +439,21 @@ header .intro-text {
 	padding: 100px 0 60px 0;
 	background: linear-gradient(to right, #492b2f 0%, #dda3a8 100%);
 	color: rgba(255,255,255,.75);
-}
 
+}
+/*
+#contact .lp {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(../src/ehpad.jpeg) center center no-repeat;
+	background-color: #751e62;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+*/
 #contact .custom-select mr-sm-2{
 	margin-left: 40px;
 }

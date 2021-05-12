@@ -4,9 +4,6 @@ import emailjs from 'emailjs-com'
 import background from './ehpad.jpeg'
 import logo from './coeur.png'
 //      <img src={logo}></img>
-import { Button, Form, FormGroup, Label, Input, FormText, Row, Col } from 'reactstrap';
-// npm install --save reactstrap
-// npm install = yarn
 
 const initialState = {
   name: '',
@@ -138,35 +135,6 @@ export const Contact = (props) => {
                     </div>
                   </div>
                   
-                  <div className='col-md-12'>
-                    <div className='form-group'>
-
-                    <FormGroup tag="fieldset">
-                      <legend>Vos préférences pour un séjour :</legend>
-                      <FormGroup check>
-                        <Label check>
-                          <Input type="radio" name="radio1" />{' '}
-                          Accueil en urgence , dans la mesure des places disponibles             
-                        </Label>
-                      </FormGroup>
-                      <FormGroup check>
-                        <Label check>
-                          <Input type="radio" name="radio1" />{' '}
-                          Court séjour, pour une meilleure vie en communauté
-                        </Label>
-                      </FormGroup>
-                      <FormGroup check disabled>
-                        <Label check>
-                          <Input type="radio" name="radio1" disabled />{' '}
-                          Option three is disabled
-                        </Label>
-                      </FormGroup>
-                    </FormGroup>
-
-                    </div>       
-                 </div> 
-
-
                 </div>
                 <div className='form-group'>
                   <textarea
