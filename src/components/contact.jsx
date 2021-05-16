@@ -95,16 +95,16 @@ export const Contact = (props) => {
              
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row lp'>
-                  <div className='col-md-12'>
-                      <div className='form-group'>
-                        <label className='form-group' for="inlineFormCustomSelect"> </label>
-                        <select id="inlineFormCustomSelect">
-                          <option selected>Vous recherchez une résidence à </option>
-                          <option value="1">Toulouse</option>
-                          <option value="2">Blagnac</option>
-                          <option value="3">Indifférent</option>
-                        </select>
-                      </div>
+                <div className='col-md-12'>
+                    <div className='form-group'>
+                    <label for="inlineFormCustomSelect"> </label>
+                    <select id="inlineFormCustomSelect">
+                      <option selected>Vous recherchez une résidence à </option>
+                      <option value="1">Toulouse</option>
+                      <option value="2">Blagnac</option>
+                      <option value="3">Indifférent</option>
+                    </select>
+                    </div>
                   </div>
                   
                   <div className='col-md-12'>
