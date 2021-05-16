@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Features } from './components/features'
-import { Services } from './components/services'
+import { Footer } from './components/footer'
 import { Gallery } from './components/gallery'
 import { Contact } from './components/contact'
 import JsonData from './data/data.json'
@@ -22,7 +22,7 @@ const App = () => {
       <Contact data={landingPageData.Contact} />
       <Features data={landingPageData.Features} />
       <Gallery />
-      <Services data={landingPageData.Services} />
+      <Footer />
     </div>
   )
 }

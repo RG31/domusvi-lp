@@ -22,8 +22,22 @@
     },
     "Services": [{
             "icon": "fa fa-bed",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "name": "",
+            "text": "" },
+       {
+            "icon": "fa fa-bed",
+            "name": "",
+            "text": ""
+        },
+        {
+            "icon": "fa fa-magic",
+            "name": "",
+            "text": ""
+        },
+        {
+            "icon": "fa fa-comments-o",
+            "name": "",
+            "text": ""
         },
         {
             "icon": "fa fa-magic",
@@ -113,24 +127,34 @@
         "youtube": "youtube.com"
     },
     "Features": [{
-            "icon": "fa fa-comments-o",
-            "title": "Accompagnement",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "icon": "img/services/espaces-securises.png",
+            "title": "Accueil en urgence",
+            "text": ""
         },
         {
-            "icon": "fa fa-group",
-            "title": "Communication",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "icon": "img/services/presence-24h-24.png",
+            "title": "Court séjour",
+            "text": ""
         },
         {
-            "icon": "fa fa-group",
-            "title": "Loisirs",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "icon": "img/services/espaces-securises.png",
+            "title": "Séjour permanent",
+            "text": ""
         },
         {
-            "icon": "fa fa-magic",
-            "title": "Entrée en 48h",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+            "icon": "img/services/presence-24h-24.png",
+            "title": "Unité Alzheimer",
+            "text": ""
+        },
+        {
+            "icon": "img/services/espaces-securises.png",
+            "title": "Présence 24h/24",
+            "text": ""
+        },
+        {
+            "icon": "img/services/presence-24h-24.png",
+            "title": "Espaces sécurisés",
+            "text": ""
         }
     ]
 }

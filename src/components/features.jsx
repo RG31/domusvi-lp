@@ -2,22 +2,23 @@ export const Features = (props) => {
   return (
     <div id='features' className='text-center'>
       <div className='container'>
-        <div className='col-md-10 col-md-offset-1 section-title'>
-          <h2>Nos Atouts</h2>
-        </div>
         <div className='row'>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className='col-xs-6 col-md-3'>
+                <div key={`${d.title}-${i}`} className='col-xs-6 col-md-2'>
                   {' '}
-                  <i className={d.icon}></i>
-                  <h3>{d.title}</h3>
-                  <p>{d.text}</p>
+                  <img src={d.icon} alt="mon_image" title="mon_image" />
+                  <h5>{d.title}</h5>
                 </div>
               ))
             : 'Loading...'}
         </div>
+        <div className='col-md-12'>
+            <h2>Lorem ipsum</h2>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elitAccusantium exercitationem officia adipisci, odio sapiente tenetur facere in vero praesentium, ratione, natus earum id accusamus nesciunt! Est itaque fugiat molestiae deleniti.</h3>
+            </div>
       </div>
+
     </div>
   )
 }
