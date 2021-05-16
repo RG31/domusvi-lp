@@ -177,14 +177,18 @@ export const Contact = (props) => {
                       />
                       <p className='help-block text-danger'></p>
                     </div>
-                    
+
+                   <div class='form-check'>
+                   <input type='checkbox' class='form-check-input' id="exampleCheck1" required/>
+                   <label class='form-check-label' for='exampleCheck1'> J'accepte que mes données personnelles recueillies soient utilisées. </label>
+                   <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>
+                   </div>
+
                     <div className='col-md-12'> 
                     { showResults ? <Results /> : null } 
                     </div>
-                  
                   </div>
                 </div>
-               
                 <div id='success'></div>
                 <button 
                   type='submit' 
@@ -194,6 +198,7 @@ export const Contact = (props) => {
                   Envoyer
                 </button>
               </form>
+              
             </div>
           </div>
           </div>
