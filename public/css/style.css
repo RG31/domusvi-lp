@@ -338,7 +338,7 @@ header .intro-text {
 	width: 120px;
 	height: 120px;
 	padding: 40px 0;
-	background: linear-gradient(to right, #8f3810 0%, #fb5c5c 100%);
+	background: linear-gradient(to right, #8f3810 0%, #d40740 100%);
 	border-radius: 50%;
 	color: #fff;
 	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
@@ -385,7 +385,7 @@ header .intro-text {
 	text-align: center;
 	margin: 0 auto;
 	color: #fff;
-	background: linear-gradient(to right, #8f3810 0%, #fb5c5c 100%);
+	background: linear-gradient(to right, #8f3810 0%, #d40740 100%);
 	padding: 30% 0 0 0;
 	height: 100%;
 	width: 100%;
@@ -477,7 +477,7 @@ header .intro-text {
 	background-color:#fff;;
 	padding-left: 20px;
 	padding-right: 20px;
-	background: linear-gradient(to left, #ca1129 0%, #bbb5b6 100%);
+	background: linear-gradient(to left, #d40740 0%, #bbb5b6 100%);
 
 	/*font-family: 'Open Sans', sans-serif;*/
 	margin-top: 50px;
@@ -494,7 +494,7 @@ header .intro-text {
 #shadow img {
 	border-radius: 60px 0px 60px 0px;
 	box-shadow: 12px 8px 12px rgba(246, 222, 248, 0.63);	
-	border-top:3px solid rgb(255, 255, 255); 
+	border-bottom:3px solid rgb(255, 255, 255); 
 }
 
 #contact .form {
@@ -537,7 +537,7 @@ header .intro-text {
 }
 
 #contact .text-danger {
-	color: #cc0033;
+	color: #d40740;
 	text-align: right;
 	border-radius: 50%;
 }
@@ -548,7 +548,7 @@ header .intro-text {
 	margin-top: 10px;
     padding-top: 5px;
    /* background: linear-gradient(to right, #8f3810 0%, #fb5c5c 100%);*/
-	background: #cc0033;
+	background: #d40740;
     border-radius: 50px;
     color: #fff;
     box-shadow: 10px 10px 10px rgb(0 0 0 / 5%);
@@ -575,7 +575,7 @@ select {
 	border-radius: 20px 0px;
 	height: 40px;
 	box-shadow: 8px 8px 8px rgba(246, 222, 248, 0.63);	
-	border-bottom:5px solid #cc0033; 
+	border-bottom:5px solid #d40740; 
 }
 
 #contact .form-control {
