@@ -48,7 +48,6 @@ a {
 a:hover, a:focus {
 	text-decoration: none;
 	/*color: #608dfd;*/
-	color:rgba(253, 176, 8, 0.637);
 	font-weight: bold;
 }
 ul, ol {
@@ -474,8 +473,7 @@ header .intro-text {
 	color: rgba(255,255,255);
 	position: absolute;
 	background-color:#fff;;
-	padding-left: 20px;
-	padding-right: 20px;
+
 	background: linear-gradient(to left, #ca1129 0%, #bbb5b6 100%);
 
 	/*font-family: 'Open Sans', sans-serif;*/
@@ -571,16 +569,6 @@ header .intro-text {
 	background: #fff;
 }
 
-#inlineFormCustomSelectt {
-	background-color: ;
-	margin-bottom:20px ;
-	font-size: 18px;
-	font-weight: 400;
-	/* font-family: 'Open Sans', sans-serif; */
-	float: left;
-	/* icvi-------------- */
-	padding-bottom: 0px;
-}
 
 select {
 	color:#720a0a;
@@ -621,12 +609,11 @@ select {
 	box-shadow: transparent;
 }
 
-.form-check {
-	vertical-align: middle;
-margin: 0px;
-font-weight: normal;
+#contact .form-checkk {
+	margin: 0px;
+	padding: 0px;
+	color: #dda3a8;
 }
-
 .form-control::-webkit-input-placeholder {
 color:#720a0a;
 }

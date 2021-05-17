@@ -9,40 +9,41 @@ const initialState = {
   surname: '',
   email: '',
   phone: '',
-  message: '',
-  label: ''
 }
 
 export const Contact = (props) => {
-
-
+  
   const [showResults, setShowResults] = useState(false)
-  console.log ("showResults", showResults ,)
+  console.log ("showResults", showResults)
   const onClick = () => setShowResults(true)
 
   const Results = () => (
     <div className='container'>
       <div className='row-lp'>
-      <div className='col-md-4'>
-      <h4 className="thanks"> Merci! Nous avons bien pris en compte votre demande</h4>  
- </div>
- </div>
- </div>
-
+       <div className='col-md-4'>
+       <h4 className="thanks"> Merci! Nous avons bien pris en compte votre demande</h4>  
+       </div>
+     </div>
+    </div>
   )
-  
 
-  const [{ name, surname, email, phone, message, label }, setState] = useState(initialState)
+  const [{ name, surname, email, phone, Select1, Select2 }, setState] = useState(initialState)
 
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
   }
+
   const clearState = () => setState({ ...initialState })
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(" name: ", name, " surname: ", surname, " email: ", email, " phone: ", phone ," message: ", message, " value: ", label )
+    console.log(
+    " name: ", name, 
+    " surname: ", surname, 
+    " email: ", email, 
+    " phone: ", phone, 
+  )
     emailjs
       .sendForm(
         'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'
@@ -51,17 +52,17 @@ export const Contact = (props) => {
         (result) => {
           console.log(result.text)
           clearState()
-           onClick() 
           /*alert("Email envoyé avec succès! Merci pour votre confiance");*/
-
+          onClick()
         },
         (error) => {
           console.log(error.text)
         },
         // Clear and reset form input fields
          e.target.reset()
-      )
+      )  
   }
+  
   return (
     <div>
       <div id='contact' >
@@ -72,13 +73,12 @@ export const Contact = (props) => {
                   src='img/DomusVi_logo_coul_baseline.png'
                   className='img-responsive'
                   alt='domusVi'
-                />{' '}
-              
+                />{' '} 
                 <h2>3 EHPAD DomusVi en Haute-Garonne (31)</h2>
                 </div>
                 <div id="shadow">
                 <img
-                      src='img/sdv.png'
+                      src='img/sdv.jpg'
                       className='img-responsive'
                       alt='domusVi'
                     />{' '}
@@ -86,39 +86,43 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-1'>
           </div>
-
           <div className='col-md-5'>
             <div className='form'>
               <div >
               </div>
               <h3> Tél : 05.67.78.89.90 <br></br> Nous vous rappelons</h3>
-             
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row lp'>
                 <div className='col-md-12'>
                     <div className='form-group'>
-                    <label for="inlineFormCustomSelect"> </label>
-                    <select id="inlineFormCustomSelect">
+                    <label for="Select1"> </label>
+                    <select 
+                    id="Select1"
+                    name='Select1'
+                    onChange={handleChange}
+                    >
                       <option selected>Vous recherchez une résidence à </option>
-                      <option value="1">Toulouse</option>
-                      <option value="2">Blagnac</option>
-                      <option value="3">Indifférent</option>
+                      <option value="Toulouse">Toulouse</option>
+                      <option value="Blagnac">Blagnac</option>
+                      <option value="Indifférent">Indifférent</option>
                     </select>
                     </div>
                   </div>
-                  
                   <div className='col-md-12'>
                     <div className='form-group'>
-                    <label for="inlineFormCustomSelect"></label>
-                    <select id="inlineFormCustomSelect">
+                    <label for='Select2'></label>
+                    <select 
+                    id='Select2'
+                    name='Select2'
+                    onChange={handleChange}
+                    >
                       <option selected>Délai de votre séjour</option>
-                      <option value="1">Urgent</option>
-                      <option value="2">1 à 3 mois</option>
-                      <option value="3">Supérieur à 3 mois</option>
+                      <option value="Urgent">Urgent</option>
+                      <option value="1 à 3 mois">1 à 3 mois</option>
+                      <option value="Supérieur à 3 mois">Supérieur à 3 mois</option>
                     </select>
                     </div>
                   </div>
-         
                   <div className='col-md-6'>
                     <div className='form-group'>
                       <input
@@ -133,7 +137,6 @@ export const Contact = (props) => {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
-
                   <div className='col-md-6'>
                     <div className='form-group'>
                       <input
@@ -148,7 +151,6 @@ export const Contact = (props) => {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
-
                   <div className='col-md-12'>
                     <div className='form-group'>
                       <input
@@ -163,7 +165,6 @@ export const Contact = (props) => {
                       <p className='help-block text-danger'></p>
                     </div>
                   </div>
-
                   <div className='col-md-12'>
                     <div className='form-group'>
                       <input
@@ -178,18 +179,19 @@ export const Contact = (props) => {
                       <p className='help-block text-danger'></p>
                     </div>
 
-                   <div class='form-check'>
-                   <input type='checkbox' class='form-check-input' id="exampleCheck1" required/>
-                   <label class='form-check-label' for='exampleCheck1'> J'accepte que mes données personnelles recueillies soient utilisées. </label>
-                   <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>
-                   </div>
+                   <div className='form-check'>
+                      <input type='checkbox' class='form-check-input' id="exampleCheck1" required/>
+                      <label for='exampleCheck1'> J'accepte que mes données personnelles recueillies soient utilisées. </label>
+                      <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>
+                    </div>
 
                     <div className='col-md-12'> 
                     { showResults ? <Results /> : null } 
                     </div>
                   </div>
-                </div>
+                
                 <div id='success'></div>
+
                 <button 
                   type='submit' 
                   className='btn btn-custom btn-lg'
@@ -197,8 +199,11 @@ export const Contact = (props) => {
                   >
                   Envoyer
                 </button>
-              </form>
-              
+
+
+                
+                </div>
+              </form> 
             </div>
           </div>
           </div>

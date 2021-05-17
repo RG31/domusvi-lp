@@ -11,7 +11,7 @@ export const Gallery = (props) => {
                 <div className='hover-bg'>
                   {' '}
                   <a
-                    href='img/portfolio/01-large.jpg'
+                    href='img/portfolio/chambre-Toulouse-large.jpg'
                     title=''
                     data-lightbox-gallery='gallery1'
                   >
@@ -19,7 +19,7 @@ export const Gallery = (props) => {
                       <h4>La chambre</h4>
                     </div>
                     <img
-                      src='img/portfolio/01-small.jpg'
+                      src='img/portfolio/chambre-Toulouse-small.jpg'
                       className='img-responsive'
                       alt='Project Title'
                     />{' '}
@@ -32,7 +32,7 @@ export const Gallery = (props) => {
                 <div className='hover-bg'>
                   {' '}
                   <a
-                    href='img/portfolio/02-large.jpg'
+                    href='img/portfolio/terrasse1-large.jpg'
                     title='Project Title'
                     data-lightbox-gallery='gallery1'
                   >
@@ -40,7 +40,7 @@ export const Gallery = (props) => {
                       <h4>La terrasse</h4>
                     </div>
                     <img
-                      src='img/portfolio/02-small.jpg'
+                      src='img/portfolio/terrasse1-small.jpg'
                       className='img-responsive'
                       alt='Project Title'
                     />{' '}
@@ -53,7 +53,7 @@ export const Gallery = (props) => {
                 <div className='hover-bg'>
                   {' '}
                   <a
-                    href='img/portfolio/09-large.jpg'
+                    href='img/portfolio/restaurant-large.jpg'
                     title='Project Title'
                     data-lightbox-gallery='gallery1'
                   >
@@ -61,7 +61,7 @@ export const Gallery = (props) => {
                       <h4>Le restaurant</h4>
                     </div>
                     <img
-                      src='img/portfolio/09-small.jpg'
+                      src='img/portfolio/restaurant-small.jpg'
                       className='img-responsive'
                       alt='Project Title'
                     />{' '}

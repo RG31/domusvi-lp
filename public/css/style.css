@@ -41,13 +41,15 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: #36c0c0;
+	color: rgb(255, 255, 255);
 	text-decoration-line: underline;
 	font-weight: 400;
+	font-weight: bold;
+
 }
 a:hover, a:focus {
 	text-decoration: none;
-	/*color: #608dfd;*/
+	color: #fd60db;
 	font-weight: bold;
 }
 ul, ol {
@@ -619,8 +621,12 @@ select {
 	-webkit-box-shadow: transparent;
 	box-shadow: transparent;
 }
+.form-check{
+	color: rgb(255, 255, 255);
+	font-size: 90%;
+	padding-left: 0px;
+}
 
-form-check-input{}
 .form-control::-webkit-input-placeholder {
 color:#720a0a;
 }
