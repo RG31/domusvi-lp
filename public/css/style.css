@@ -369,10 +369,10 @@ header .intro-text {
 	}
 
 .portfolio-item img{
-	border-radius: 80px 0px 80px 0px;
-	box-shadow: 12px 8px 12px rgba(246, 222, 248, 0.63);
+	border-radius: 60px 0px 60px 0px;
+	box-shadow: 12px 8px 12px rgba(246, 222, 248, 0.63);	
+	border-top:2px solid rgb(255, 255, 255); 
 }
-
 
 }
 .portfolio-item .hover-bg {
@@ -492,10 +492,9 @@ header .intro-text {
 
 
 #shadow img {
-	border-radius: 80px 0px 80px 0px;
+	border-radius: 60px 0px 60px 0px;
 	box-shadow: 12px 8px 12px rgba(246, 222, 248, 0.63);	
-	border-bottom:3px solid rgb(247, 241, 241); 
-
+	border-top:3px solid rgb(255, 255, 255); 
 }
 
 #contact .form {
@@ -507,18 +506,12 @@ header .intro-text {
 	margin-left: 40px;
 }
 
-#contact .contact-text{
-	/*margin-right: 70px;
-	margin-bottom: 70px;
-	margin-bottom: 70px;*/
-}
 #contact .section-title {
 	margin-bottom: 40px;
 }
 #contact .section-title p {
 	font-size: 16px;
 }
-/* ici*/
 #contact h2 {
 	text-transform: none;
 	color: #fff;
