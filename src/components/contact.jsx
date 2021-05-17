@@ -95,20 +95,23 @@ export const Contact = (props) => {
                 <div className='row lp'>
                 <div className='col-md-12'>
                     <div className='form-group'>
+                    
                     <label for="Select1"> </label>
                     <select 
                     id="Select1"
                     name='Select1'
                     onChange={handleChange}
+                    className="form-group-label-mine"
                     >
-                      <option selected>Vous recherchez une résidence à </option>
+                      <option selected>Vous recherchez une résidence </option>
                       <option value="Toulouse">Toulouse</option>
                       <option value="Blagnac">Blagnac</option>
                       <option value="Indifférent">Indifférent</option>
                     </select>
+                    
                     </div>
                   </div>
-                  <div className='col-md-12'>
+                  <div className='col-md-12'><div className="bg-info"></div>
                     <div className='form-group'>
                     <label for='Select2'></label>
                     <select 
@@ -181,7 +184,7 @@ export const Contact = (props) => {
 
                    <div className='form-check'>
                       <input type='checkbox' class='form-check-input' id="exampleCheck1" required/>
-                      <label for='exampleCheck1'> J'accepte que mes données personnelles recueillies soient utilisées. </label>
+                      <label class='form-check-label'for='exampleCheck1'> J'accepte que mes données personnelles recueillies soient utilisées. </label>
                       <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>
                     </div>
 
@@ -189,7 +192,6 @@ export const Contact = (props) => {
                     { showResults ? <Results /> : null } 
                     </div>
                   </div>
-                
                 <div id='success'></div>
 
                 <button 
@@ -199,9 +201,6 @@ export const Contact = (props) => {
                   >
                   Envoyer
                 </button>
-
-
-                
                 </div>
               </form> 
             </div>
