@@ -48,7 +48,7 @@ export const Contact = (props) => {
   )
     emailjs
       .sendForm(
-       /* 'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'*/
+        'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'
       )
       .then(
         (result) => {
