@@ -41,13 +41,15 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: #36c0c0;
+	color: rgb(255, 255, 255);
 	text-decoration-line: underline;
 	font-weight: 400;
+	font-weight: bold;
+
 }
 a:hover, a:focus {
 	text-decoration: none;
-	/*color: #608dfd;*/
+	color: #fd60db;
 	font-weight: bold;
 }
 ul, ol {
@@ -473,7 +475,8 @@ header .intro-text {
 	color: rgba(255,255,255);
 	position: absolute;
 	background-color:#fff;;
-
+	padding-left: 20px;
+	padding-right: 20px;
 	background: linear-gradient(to left, #ca1129 0%, #bbb5b6 100%);
 
 	/*font-family: 'Open Sans', sans-serif;*/
@@ -491,11 +494,9 @@ header .intro-text {
 #shadow img {
 	border-radius: 80px 0px 80px 0px;
 	box-shadow: 12px 8px 12px rgba(246, 222, 248, 0.63);	
+	border-bottom:3px solid rgb(255, 255, 255); 
 
-	/*width:650px;
-	border:3px solid rgb(247, 241, 241);*/
 }
-
 
 #contact .form {
 	margin-top: 70px;
@@ -507,9 +508,6 @@ header .intro-text {
 }
 
 #contact .contact-text{
-	/*margin-right: 70px;
-	margin-bottom: 70px;
-	margin-bottom: 70px;*/
 }
 #contact .section-title {
 	margin-bottom: 40px;
@@ -517,7 +515,6 @@ header .intro-text {
 #contact .section-title p {
 	font-size: 16px;
 }
-/* ici*/
 #contact h2 {
 	text-transform: none;
 	color: #fff;
@@ -569,20 +566,20 @@ header .intro-text {
 	background: #fff;
 }
 
-
 select {
 	color:#720a0a;
-	background-color:#fff;;
+	background-color:#fff;
 	padding-left: 10px;
 	padding-right: 10px;
-
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 400;
 	/*font-family: 'Open Sans', sans-serif;*/
 	margin: 0px;
-	border-radius: 20px ;
+	border-radius: 20px 0px;
 	height: 40px;
-	
+	box-shadow: 8px 8px 8px rgba(246, 222, 248, 0.63);	
+	border-bottom:5px solid #cc0033; 
+	cursor: pointer;
 }
 
 #contact .form-control {
@@ -601,6 +598,7 @@ select {
 	-webkit-transition: none;
 	-o-transition: none;
 	transition: none;
+	background-color: rgb(252, 237, 248) !important;
 }
 #contact .form-control:focus {
 	border-color: #999;
@@ -609,16 +607,21 @@ select {
 	box-shadow: transparent;
 }
 
-#contact .form-checkk {
-	margin: 0px;
-	padding: 0px;
-	color: #dda3a8;
+.form-check {
+	color: rgb(255, 255, 255);
+	font-size: 90%;
+	padding-left: 0px;
 }
+.form-check-label {
+	margin-left: 2px;
+	padding-bottom: 0px;
+  }
+
 .form-control::-webkit-input-placeholder {
 color:#720a0a;
 }
 .form-control:-moz-placeholder {
-color: rgb(15, 164, 233);
+color: rgb(233, 15, 204);
 }
 .form-control::-moz-placeholder {
 color: #777;

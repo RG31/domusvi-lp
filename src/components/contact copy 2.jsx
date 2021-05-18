@@ -38,7 +38,7 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-
+    
     console.log(
     " name: ", name, 
     " surname: ", surname, 
