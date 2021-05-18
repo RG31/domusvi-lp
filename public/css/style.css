@@ -239,6 +239,7 @@ padding-bottom: 30px;
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 61px;
 	border-radius: 50px 0px 50px 0px;
+	box-shadow: 21px 21px 20px#720a0a;
 }
 #contact {
 	padding: 50px 0 60px 0;
@@ -271,8 +272,9 @@ padding-bottom: 30px;
 	text-transform: none;
 	color: #fff;
 	margin-top: 10px;
-	margin-bottom: 15px;
-	padding-bottom: 15px;
+	margin-top: 35px;
+	padding-bottom: 35px;
+	text-shadow: 11px 11px 10px #492b2f;
 }
 #contact .section-title h2::after {
 	position: absolute;
@@ -285,12 +287,10 @@ padding-bottom: 30px;
 }
 #contact h3 {
 	color: #fff;
-	/*ici 2 lignes*/ 
-	margin-top: 80px;
-	margin-bottom: 25px;
-	padding-bottom: 20px;
-	margin-bottom: 0px;
 	font-weight: 400;
+	text-shadow: 11px 11px 5px #492b2f;
+	padding-bottom: 30px;
+	padding-top: 60px;
 }
 
 #contact .text-danger {
@@ -310,7 +310,7 @@ padding-bottom: 30px;
 	background: #d40740;
     border-radius: 50px;
     color: #fff;
-    box-shadow: 10px 10px 10px rgb(0 0 0 / 5%);
+	box-shadow: 11px 11px 10px #492b2f;
 }
 #contact .btn-custom:hover {
 	color: #1f386e;
@@ -319,6 +319,7 @@ padding-bottom: 30px;
 }
 #contact h3{
 	margin-bottom: 5px;
+	font-weight: bold;
 }
 select {
 	color:#720a0a;
@@ -415,6 +416,8 @@ color: rgb(13, 236, 106);
 }
 #features .contact-text h3{
 	font-size: 18px;
+	border-top: solid#720a0a;
+	padding-top: 30px;
 }
 #features .contact-text h6{
 	font-size: 14px;
@@ -425,12 +428,13 @@ color: rgb(13, 236, 106);
 	font-size: 18px;
 	padding: 15px 20px 20px 30px;
 }
-#contact h2 {
+#contact .tel{
+	margin-top: -40px;
+	text-align: left;
+}
+#contact  h2 {
 	text-transform: none;
 	color: #fff;
-	margin-top: 50px;
-	margin-bottom: 40px;
 	font-size: 30px;
 }
-
 }
