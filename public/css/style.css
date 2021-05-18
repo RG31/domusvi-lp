@@ -33,6 +33,9 @@ h5 {
 	line-height: 20px;
 	color:#2c0404ec;
 }
+h6{
+	font-size: 18px;
+}
 p {
 	font-size: 15px;
 }
@@ -230,37 +233,33 @@ header .intro-text {
 /* Features Section */
 #features {
 	padding: 80px 0;
+	/*margin-left: 17px;*/
 	background: #f6f6f6;
 }
 #features h5 {
 	padding-top: 10px;
 	padding-bottom: 40px;
-	font-size: 13px;
-}
 
-#features img2 {
-	font-size: 38px;
-	margin-bottom: 20px;
-	transition: all 0.5s;
-	color: #fff;
-	width: 100px;
-	height: 100px;
-	padding: 0px 0;
-	border-radius: 50%;
-	/*background: linear-gradient(to right, #492b2f 0%, #dda3a8 100%);*/
-	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+    margin-left: auto;
+    margin-right: auto; 
+
+	font-size: 13px;
+	width: 110px;
+	height: 110px;
 }
 
 #features img {
 	width: 110px;
 	height: 110px;
-	content : " ";
+
+    margin-left: auto;
+    margin-right: auto; 
+
 	color:#720a0a;
 	border: solid;
 	border-radius: 50%;
 	padding: 10px;
 	box-shadow: 10px 10px 10px rgba(170, 77, 77, 0.555);
-
 }
 /* About + contact 
 #about {
