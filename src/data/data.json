@@ -127,32 +127,32 @@
         "youtube": "youtube.com"
     },
     "Features": [{
-            "icon": "img/services/espaces-securises.jpg",
+            "icon": "img/services/accueil-en-urgence.png",
             "title": "Accueil en urgence",
             "text": ""
         },
         {
-            "icon": "img/services/presence-24h-24.jpg",
+            "icon": "img/services/court-sejour.png",
             "title": "Court séjour",
             "text": ""
         },
         {
-            "icon": "img/services/espaces-securises.jpg",
+            "icon": "img/services/sejour-permanent.png",
             "title": "Séjour permanent",
             "text": ""
         },
         {
-            "icon": "img/services/presence-24h-24.jpg",
+            "icon": "img/services/unite-alzheimer.png",
             "title": "Unité Alzheimer",
             "text": ""
         },
         {
-            "icon": "img/services/espaces-securises.jpg",
+            "icon": "img/services/presence-24h-24.png",
             "title": "Présence 24h/24",
             "text": ""
         },
         {
-            "icon": "img/services/presence-24h-24.jpg",
+            "icon": "img/services/espaces-securises.png",
             "title": "Espaces sécurisés",
             "text": ""
         }

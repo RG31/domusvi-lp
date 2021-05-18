@@ -89,10 +89,8 @@ button:focus {
 #features h5 {
 	padding-top: 10px;
 	padding-bottom: 40px;
-
     margin-left: auto;
     margin-right: auto; 
-
 	font-size: 13px;
 	width: 110px;
 	height: 110px;
@@ -100,60 +98,82 @@ button:focus {
 #features img {
 	width: 110px;
 	height: 110px;
-
     margin-left: auto;
     margin-right: auto;
-
 	color:#720a0a;
 	border: solid;
 	border-radius: 50%;
 	padding: 10px;
 	box-shadow: 10px 10px 10px rgba(170, 77, 77, 0.555);
 }
+#features h6 {
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+	color:#726f6f;
+	border: solid;
+	border-radius: 00px 60px 0px 60px;
+	padding: 50px;
+	box-shadow: 20px 20px 20px rgba(170, 77, 77, 0.555);
+	line-height: 30px;
+	text-align: left 
+}
+#features h3 {
+font-size: 25px;
+padding-bottom: 30px;
+}
+#features .row div {
+	margin-bottom: -25px;
+	}
+/* ---read more -- */
+#features details {
+  position:relative;
+  display:inline;
+}
+#features details summary {
+  display:block;
+  cursor: pointer;
+  color:#fff;
+  font-weight: bolder;
+  border: solid;
+  background-color: #720a0a;
+  border-color: #720a0a;
+  border-radius: 60px 0px 60px 0px;
+  padding: 10px;
+  box-shadow: 20px 20px 20px rgba(170, 77, 77, 0.555);
+  line-height: 0px;
+}
+#features details summary:focus {
+  outline:none;
+}
+#features details[open] {
+  display:block;
+  padding-bottom:25px;
+  padding-top:10px;
+  animation: open .2s linear;
+}
+#features details[open] summary {
+  position:absolute;
+  bottom: 0;
+  left:0;
+}
 
-/* Services Section */
-#services {
-	padding: 80px 0;
-	background: linear-gradient(to right, #492b2f 0%, #dda3a8 100%);
-	color: #fff;
+#features details #open{padding-left:5px;text-align:middle;}
+#features details #open:after{
+    display: inline-block;
+    position:relative;
+    top: -3px;
+    padding-left: 8px;
+    content: "\00bb";
+    transform: rotate(90deg);
 }
-#services .service-desc {
-	margin: 10px 10px 20px;
-}
-#services h2 {
-	color: #fff;
-}
-#services .section-title h2::after {
-	position: absolute;
-	content: "";
-	background: rgba(255,255,255,.3);
-	height: 4px;
-	width: 60px;
-	bottom: 0;
-	margin-left: -30px;
-	left: 50%;
-}
-#services i.fa {
-	font-size: 42px;
-	width: 120px;
-	height: 120px;
-	padding: 40px 0;
-	background: linear-gradient(to right, #8f3810 0%, #d40740 100%);
-	border-radius: 50%;
-	color: #fff;
-	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
-}
-#services h3 {
-	font-weight: 500;
-	padding: 5px 0;
-	color: #fff;
-}
-#services p {
-	color: rgba(255,255,255,.75);
-}
-#services .service-desc {
-	margin-bottom: 40px;
-}
+#features details[open] #open{display:none;}
+#features details #close{display:none;}
+#features details[open] #close{display:block;}
+
+::-webkit-details-marker {display: none;}
+
+/* ---end read more -- */  
 
 /* Portfolio Section */
 #portfolio  {
@@ -170,7 +190,6 @@ button:focus {
 	border-radius: 60px 0px 60px 0px;
 	box-shadow: 12px 8px 12px rgba(246, 222, 248, 0.63);	
 	border-top:2px solid rgb(255, 255, 255); 
-
 }
 .portfolio-item .hover-bg {
 	overflow: hidden;
@@ -209,33 +228,13 @@ button:focus {
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
-
-/* Team Section */
-#team {
-	padding: 100px 0;
-}
-#team h4 {
-	margin: 5px 0;
-}
-#team .team-img {
-	width: 240px;
-}
-#team .thumbnail {
-	background: transparent;
-	border: 0;
-}
-#team .thumbnail .caption {
-	padding: 10px 0 0 0;
-	color: #888;
-}
 /* Contact Section */
 .thanks {
 	padding: 20px;
+	font-size: 18px;
 	color: rgba(255,255,255);
 	position: absolute;
 	background-color:#fff;;
-	padding-left: 20px;
-	padding-right: 0px;
 	background: linear-gradient(to left, #d40740 0%, #bbb5b6 100%);
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 61px;
@@ -245,18 +244,20 @@ button:focus {
 	padding: 50px 0 60px 0;
 	background: linear-gradient(to left, #492b2f 0%, #fad7da 100%);
 	color: rgba(255,255,255,.75);
+	border: 1px solid;
 }
+/*#contact .form{
+	border: 1px solid;
+}*/
 #shadow img {
 	border-radius: 60px 0px 60px 0px;
 	box-shadow: 12px 8px 12px rgba(246, 222, 248, 0.63);	
 	border-bottom:3px solid rgb(255, 255, 255); 
 }
-
 #contact .form {
 	margin-top: 70px;
 	margin-left: 0px;
 }
-
 #contact .custom-select mr-sm-2{
 	margin-left: 40px;
 }
@@ -291,6 +292,7 @@ button:focus {
 	margin-bottom: 0px;
 	font-weight: 400;
 }
+
 #contact .text-danger {
 	color: #d40740;
 	text-align: right;
@@ -411,4 +413,24 @@ color: rgb(13, 236, 106);
 #about img {
 	margin: 50px 0;
 }
+#features .contact-text h3{
+	font-size: 18px;
+}
+#features .contact-text h6{
+	font-size: 14px;
+	line-height: 20px;
+	padding: 30px 20px 20px 30px;
+}
+.thanks{
+	font-size: 18px;
+	padding: 15px 20px 20px 30px;
+}
+#contact h2 {
+	text-transform: none;
+	color: #fff;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	font-size: 30px;
+}
+
 }

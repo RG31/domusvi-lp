@@ -21,7 +21,7 @@ export const Contact = (props) => {
     <div className='container'>
       <div className='row-lp'>
        <div className='col-md-4'>
-       <h4 className="thanks"> Merci! Nous avons bien pris en compte votre demande</h4>  
+       <h4 className="thanks"> Merci ! Nous avons bien pris en compte votre demande</h4>  
        </div>
      </div>
     </div>
@@ -48,7 +48,9 @@ export const Contact = (props) => {
   )
     emailjs
       .sendForm(
-        'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'
+       /* 'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'*/
+        'service_qra7ttk', 'template_kp2u4u3', e.target, 'user_8VEaqn0oNGu7ZWLJwP2Dm'
+       /* 'service_yaqnu3a', 'template_5iczz2n', e.target, 'user_sShD4ob7DjFxCnwJJv55G'*/
       )
       .then(
         (result) => {
