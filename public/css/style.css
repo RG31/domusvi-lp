@@ -214,23 +214,7 @@ padding-bottom: 30px;
 	transition: all 0.5s;
 	cursor: zoom-in;
 }
-.hover-bg .hover-text>h4 {
-	opacity: 0;
-	color: #fff;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-	font-size: 18px;
-	letter-spacing: 1px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
+
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
@@ -499,5 +483,10 @@ color: rgb(13, 236, 106);
 	margin-left: 0px;
 	padding-bottom: 0px;
   }
-
+.hover-bg .hover-text {
+	background:none;
+}
+.hover-bg:hover .hover-text {
+	opacity: 0;
+}
 }
