@@ -3,8 +3,6 @@ import { useState } from 'react'
 import emailjs from 'emailjs-com'
 // npm install --save reactstrap
 // npm install = yarn
-// npm i react-media-hook --save
-import { useMediaPredicate} from "react-media-hook";
 
 const initialState = {
   name: '',
@@ -14,7 +12,7 @@ const initialState = {
 }
 
 export const Contact = (props) => {
-  const smallerThan768 = useMediaPredicate("(max-width: 768px)");
+  
   const [showResults, setShowResults] = useState(false)
   console.log ("showResults", showResults)
   const onClick = () => setShowResults(true)
@@ -49,9 +47,9 @@ export const Contact = (props) => {
   )
     emailjs
       .sendForm(
-       /* 'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'- rgitunes*/
+       /* 'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'*/
         'service_qra7ttk', 'template_kp2u4u3', e.target, 'user_8VEaqn0oNGu7ZWLJwP2Dm'
-       /* 'service_qsp2rj1', 'template_5iczz2n', e.target, 'user_sShD4ob7DjFxCnwJJv55G'*/
+       /* 'service_yaqnu3a', 'template_5iczz2n', e.target, 'user_sShD4ob7DjFxCnwJJv55G'*/
       )
       .then(
         (result) => {
@@ -183,8 +181,7 @@ export const Contact = (props) => {
                    <div className='form-check'>
                       <input type='checkbox' class='form-check-input' id="exampleCheck1" required/>
                       <label class='form-check-label'for='exampleCheck1'> J'accepte que mes données personnelles recueillies soient utilisées. </label>
-                      {smallerThan768 && <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>}
-                      
+                      <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>
                     </div>
 
                     <div className='col-md-12'> 
