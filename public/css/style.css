@@ -193,6 +193,7 @@ padding-bottom: 30px;
 .portfolio-item img{
 	border-radius: 60px 0px 60px 0px;
 	box-shadow: 12px 8px 12px rgba(246, 222, 248, 0.63);	
+	border-right:2px solid rgb(255, 255, 255); 
 	border-top:2px solid rgb(255, 255, 255); 
 }
 .portfolio-item .hover-bg {
