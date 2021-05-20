@@ -16,7 +16,7 @@ export const Gallery = (props) => {
                     data-lightbox-gallery='gallery1'
                   >
                     <div className='hover-text'>
-                      <h4></h4>
+                      <h4> </h4>
                     </div>
                     <img
                       src='img/portfolio/chambre-Toulouse-small.jpg'
@@ -37,7 +37,7 @@ export const Gallery = (props) => {
                     data-lightbox-gallery='gallery1'
                   >
                     <div className='hover-text'>
-                      <h4></h4>
+                      <h4> </h4>
                     </div>
                     <img
                       src='img/portfolio/terrasse1-small.jpg'
@@ -58,7 +58,7 @@ export const Gallery = (props) => {
                     data-lightbox-gallery='gallery1'
                   >
                     <div className='hover-text'>
-                      <h4></h4>
+                      <h4> </h4>
                     </div>
                     <img
                       src='img/portfolio/restaurant-small.jpg'
@@ -69,11 +69,8 @@ export const Gallery = (props) => {
                 </div>
               </div>
             </div>
-      
     </div>
-
    </div>
-   
  </div>
 </div>
   )

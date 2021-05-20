@@ -478,9 +478,6 @@ color: rgb(13, 236, 106);
 	box-shadow: 20px 20px 20px rgba(170, 77, 77, 0.555);
 	line-height: 30px;
 }
-
-
-}
 .form-check-label {
 	margin-left: 0px;
 	padding-bottom: 0px;
@@ -490,5 +487,6 @@ color: rgb(13, 236, 106);
 }
 .hover-bg:hover .hover-text {
 	opacity: 0;
+	transition:none;
 }
 }
