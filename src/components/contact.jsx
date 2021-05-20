@@ -47,9 +47,10 @@ export const Contact = (props) => {
   )
     emailjs
       .sendForm(
-       /* 'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'*/
+       /* domusvi*/
+        /* 'service_qsp2rj1', 'template_205x3v9', e.target, 'user_M5d2VPZsG9UHjNUkSoVfN' */
+        /* RG31*/
         'service_qra7ttk', 'template_kp2u4u3', e.target, 'user_8VEaqn0oNGu7ZWLJwP2Dm'
-       /* 'service_yaqnu3a', 'template_5iczz2n', e.target, 'user_sShD4ob7DjFxCnwJJv55G'*/
       )
       .then(
         (result) => {
@@ -72,7 +73,8 @@ export const Contact = (props) => {
         <div className='container'>
           <div className='col-md-6'>
                 <div className='contact-text'>
-                <h2>3 EHPAD DomusVi en Haute-Garonne (31)</h2>
+                <h2>3 EHPAD DomusVi</h2>
+                <h2 className="contact-text-title2"> en Haute-Garonne (31)</h2>
                 </div>
                 <div id="shadow">
                 <img
@@ -93,7 +95,6 @@ export const Contact = (props) => {
                 <div className='row lp'>
                 <div className='col-md-12'>
                     <div className='form-group'>
-                    
                     <label for="Select1"> </label>
                     <select 
                     id="Select1"
@@ -181,7 +182,7 @@ export const Contact = (props) => {
                    <div className='form-check'>
                       <input type='checkbox' class='form-check-input' id="exampleCheck1" required/>
                       <label class='form-check-label'for='exampleCheck1'> J'accepte que mes données personnelles recueillies soient utilisées. </label>
-                      <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>
+                      <a href="https://www.domusvi.com/consentement" target="_blank"> En savoir plus * </a>
                     </div>
 
                     <div className='col-md-12'> 

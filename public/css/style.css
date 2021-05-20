@@ -72,7 +72,6 @@ hr {
 	margin-bottom: 20px;
 	border: 0;
 }
-
 input:focus,
 select:focus,
 textarea:focus,
@@ -107,17 +106,22 @@ button:focus {
 	box-shadow: 10px 10px 10px rgba(170, 77, 77, 0.555);
 }
 #features h6 {
-	margin-top: 20px;
     margin-left: auto;
     margin-right: auto; 
+	color:#726f6f;
+	border-radius: 00px 60px 0px 60px;
+	line-height: 30px;
+	text-align: justify;  
+}
+#features .text-container {
 	color:#726f6f;
 	border: solid;
 	border-radius: 00px 60px 0px 60px;
 	padding: 50px;
 	box-shadow: 20px 20px 20px rgba(170, 77, 77, 0.555);
 	line-height: 30px;
-	text-align: left 
 }
+
 #features h3 {
 font-size: 25px;
 padding-bottom: 30px;
@@ -207,6 +211,7 @@ padding-bottom: 30px;
 	width: 100%;
 	opacity: 0;
 	transition: all 0.5s;
+	cursor: zoom-in;
 }
 .hover-bg .hover-text>h4 {
 	opacity: 0;
@@ -243,11 +248,11 @@ padding-bottom: 30px;
 }
 #contact {
 	padding: 50px 0 60px 0;
-	background: linear-gradient(to left, #492b2f 0%, #fad7da 100%);
+	background: linear-gradient(to left, #492b2f 0%, #fad7da 90%);
 	color: rgba(255,255,255,.75);
 	border: 1px solid;
 }
-#contact .formStyle{
+#contact .formStyle {
 	padding: 30px;
 	background: linear-gradient(to left, #755f62 0%, #fad7da 100%);
     border-radius: 50px 0px;
@@ -277,9 +282,13 @@ padding-bottom: 30px;
 	text-transform: none;
 	color: #fff;
 	margin-top: px;
-	padding-bottom: 45px;
+	padding-bottom: px;
 	text-shadow: 3px 3px 3px #492b2f;
 	text-align: center;
+}
+#contact .contact-text-title2 {
+	margin-top: 20px;
+	padding-bottom: 20px;
 }
 #contact .section-title h2::after {
 	position: absolute;
@@ -347,7 +356,7 @@ select:hover {
 #contact .form-control {
 	display: block;
 	width: 100%;
-	padding: 6px 12px;
+	padding: 16px 12px;
 	font-size: 16px;
 	line-height: 1.42857143;
 	color: #444;
@@ -372,6 +381,7 @@ select:hover {
 	color: rgb(255, 255, 255);
 	font-size: 90%;
 	padding-left: 0px;
+	text-align: left;
 }
 .form-check-label {
 	margin-left: 2px;
@@ -430,8 +440,8 @@ color: rgb(13, 236, 106);
 	padding: 30px 20px 20px 30px;
 }
 .thanks{
-	font-size: 18px;
-	padding: 15px 20px 20px 30px;
+	font-size: 15px;
+	padding: 15px 10px 10px 15px;
 }
 #contact {
 	border-radius: 50px;
@@ -456,10 +466,37 @@ color: rgb(13, 236, 106);
 	color: #fff;
 	font-size: 30px;
 }
+#contact .contact-text-title2 {
+	margin-top: 0px;
+	padding-bottom: 20px;
+	margin-top: -15px;
+}
 #contact h3 {
 	padding-top: 35px;
 	padding-bottom: 0px;
 	font-size: 25px;
 }
+#contact .formStyle {
+	padding-left: 15px;
+	background: linear-gradient(to left, #f1eaeb 0%, #410207 100%);
+    border-radius: 50px 0px;
+    color: #fff;
+	/*box-shadow: 11px 11px 10px #f1e2e4;*/
+}
+#features h6 {
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+	color:#726f6f;
+	border: solid;
+	border-radius: 00px 60px 0px 60px;
+	padding: 50px;
+	box-shadow: 20px 20px 20px rgba(170, 77, 77, 0.555);
+	line-height: 30px;
+}
+.form-check-label {
+	margin-left: 0px;
+	padding-bottom: 0px;
+  }
 
 }

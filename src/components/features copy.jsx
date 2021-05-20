@@ -24,7 +24,8 @@ export const Features = (props) => {
         </div>
         <div className='contact-text'>
         <div className='col-md-12'>
-            <h3 className='text-containerr'>Pourquoi choisir nos maisons de retraite (EHPAD) en Haute-Garonne ?</h3>
+            <h3>Pourquoi choisir nos maisons de retraite (EHPAD) en Haute-Garonne ?</h3>
+           <div className='contact-text-complet'>
             <h6>Situés à Toulouse et Blagnac, nos EHPAD vous proposent un accompagnement personnalisé par des équipes
                de professionnels attentifs à la santé et au bien-être des personnes accueillies. 
                Nous mettons un point d'honneur à préserver une ambiance familiale et conviviale favorisant le lien social au sein de nos maisons. 
@@ -35,7 +36,7 @@ export const Features = (props) => {
                et sont validés par une diététicienne.<br></br>
             </h6>
             {smallerThan768 && 
-            <details> 
+            <details>
                 <summary>
                   <span id="open"> Lire plus ...</span>
                   <span id="close"> Fermer ...</span>
@@ -59,6 +60,6 @@ export const Features = (props) => {
         </div>
         </div>
       </div>
-  
+    </div>
   )
 }
