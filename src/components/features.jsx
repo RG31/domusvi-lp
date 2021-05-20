@@ -24,7 +24,7 @@ export const Features = (props) => {
         </div>
         <div className='contact-text'>
         <div className='col-md-12'>
-            <h3 className='text-containerr'>Pourquoi choisir nos maisons de retraite (EHPAD) en Haute-Garonne ?</h3>
+            <h3>Pourquoi choisir nos maisons de retraite (EHPAD) en Haute-Garonne ?</h3>
             <h6>Situés à Toulouse et Blagnac, nos EHPAD vous proposent un accompagnement personnalisé par des équipes
                de professionnels attentifs à la santé et au bien-être des personnes accueillies. 
                Nous mettons un point d'honneur à préserver une ambiance familiale et conviviale favorisant le lien social au sein de nos maisons. 
