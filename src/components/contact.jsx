@@ -3,6 +3,8 @@ import { useState } from 'react'
 import emailjs from 'emailjs-com'
 // npm install --save reactstrap
 // npm install = yarn
+// npm i react-media-hook --save
+import { useMediaPredicate} from "react-media-hook";
 
 const initialState = {
   name: '',
@@ -12,7 +14,7 @@ const initialState = {
 }
 
 export const Contact = (props) => {
-  
+  const smallerThan768 = useMediaPredicate("(max-width: 768px)");
   const [showResults, setShowResults] = useState(false)
   console.log ("showResults", showResults)
   const onClick = () => setShowResults(true)
@@ -32,7 +34,6 @@ export const Contact = (props) => {
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
-    
   }
 
   const clearState = () => setState({ ...initialState })
@@ -48,9 +49,9 @@ export const Contact = (props) => {
   )
     emailjs
       .sendForm(
-       /* 'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'*/
+       /* 'service_eqi2aez', 'template_5fn44tk', e.target, 'user_Jf6dGf94PvBbsbQ44wxg9'- rgitunes*/
         'service_qra7ttk', 'template_kp2u4u3', e.target, 'user_8VEaqn0oNGu7ZWLJwP2Dm'
-       /* 'service_yaqnu3a', 'template_5iczz2n', e.target, 'user_sShD4ob7DjFxCnwJJv55G'*/
+       /* 'service_qsp2rj1', 'template_5iczz2n', e.target, 'user_sShD4ob7DjFxCnwJJv55G'*/
       )
       .then(
         (result) => {
@@ -73,16 +74,11 @@ export const Contact = (props) => {
         <div className='container'>
           <div className='col-md-6'>
                 <div className='contact-text'>
-                <img
-                  src='img/DomusVi_logo_coul_baseline.png'
-                  className='img-responsive'
-                  alt='domusVi'
-                />{' '} 
                 <h2>3 EHPAD DomusVi en Haute-Garonne (31)</h2>
                 </div>
                 <div id="shadow">
                 <img
-                      src='img/sdv.jpg'
+                      src='img/Scene-de-vie-light.jpg'
                       className='img-responsive'
                       alt='domusVi'
                     />{' '}
@@ -92,9 +88,9 @@ export const Contact = (props) => {
           </div>
           <div className='col-md-5'>
             <div className='form'>
-              <div >
+              <div className="">
               </div>
-              <h3 className="tel" > Tél : 05.67.78.89.90 <br></br> Nous vous rappelons</h3>
+              <h3> Tél : 05.67.78.89.90 <br></br> Nous vous rappelons</h3>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row lp'>
                 <div className='col-md-12'>
@@ -107,7 +103,7 @@ export const Contact = (props) => {
                     onChange={handleChange}
                     className="form-group-label-mine"
                     >
-                      <option selected>Vous recherchez une résidence </option>
+                      <option selected>Vous recherchez une résidence à </option>
                       <option value="Toulouse">Toulouse</option>
                       <option value="Blagnac">Blagnac</option>
                       <option value="Indifférent">Indifférent</option>
@@ -123,7 +119,7 @@ export const Contact = (props) => {
                     name='Select2'
                     onChange={handleChange}
                     >
-                      <option selected>Délai de votre séjour</option>
+                      <option selected>Délai de votre recherche</option>
                       <option value="Urgent">Urgent</option>
                       <option value="1 à 3 mois">1 à 3 mois</option>
                       <option value="Supérieur à 3 mois">Supérieur à 3 mois</option>
@@ -160,21 +156,7 @@ export const Contact = (props) => {
                   </div>
                   <div className='col-md-12'>
                     <div className='form-group'>
-                      <input
-                        type='email'
-                        id='email'
-                        name='email'
-                        className='form-control'
-                        placeholder='Email*'
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className='help-block text-danger'></p>
-                    </div>
-                  </div>
-                  <div className='col-md-12'>
-                    <div className='form-group'>
-                      <input
+                    <input
                         type='text'
                         id='phone'
                         name='phone'
@@ -185,11 +167,24 @@ export const Contact = (props) => {
                       />
                       <p className='help-block text-danger'></p>
                     </div>
-
+                  </div>
+                  <div className='col-md-12'>
+                    <div className='form-group'>
+                    <input
+                        type='email'
+                        id='email'
+                        name='email'
+                        className='form-control'
+                        placeholder='Email'
+                        onChange={handleChange}
+                      />
+                      <p className='help-block text-danger'></p>
+                    </div>
                    <div className='form-check'>
                       <input type='checkbox' class='form-check-input' id="exampleCheck1" required/>
                       <label class='form-check-label'for='exampleCheck1'> J'accepte que mes données personnelles recueillies soient utilisées. </label>
-                      <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>
+                      {smallerThan768 && <a href="https://www.domusvi.com/information-cookies" target="_blank"> En savoir plus * </a>}
+                      
                     </div>
 
                     <div className='col-md-12'> 
