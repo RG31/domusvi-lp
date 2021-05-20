@@ -214,7 +214,6 @@ padding-bottom: 30px;
 	transition: all 0.5s;
 	cursor: zoom-in;
 }
-
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
@@ -488,5 +487,6 @@ color: rgb(13, 236, 106);
 }
 .hover-bg:hover .hover-text {
 	opacity: 0;
+	transition:none;
 }
 }
