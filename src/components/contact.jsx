@@ -90,7 +90,7 @@ export const Contact = (props) => {
             <div className='form'>
               <div className="">
               </div>
-              <h3> Tél : 05.88.88.88.88 <br></br> Nous vous rappelons</h3>
+              <h3> Tél : 05 33 06 29 24 <br></br> Nous vous rappelons</h3>
               <form className='formStyle' name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row lp'>
                 <div className='col-md-12'>
