@@ -90,11 +90,12 @@ export const Contact = (props) => {
             <div className='form'>
               <div className="">
               </div>
-              <h3> Tél : 05 33 06 29 24 <br></br> Nous vous rappelons</h3>
+              <h3> Nous contacter <br></br>Tél : 05 33 06 29 24</h3>
               <form className='formStyle' name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row lp'>
                 <div className='col-md-12'>
                     <div className='form-group'>
+                    <h3> Nous vous rappelons</h3>
                     <label for="Select1"> </label>
                     <select 
                     id="Select1"
@@ -159,7 +160,7 @@ export const Contact = (props) => {
                         type='tel'
                         id='phone'
                         name='phone'
-                        Pattern="^0[0-9]{9}" 
+                        Pattern="[0-9]{10}" 
                         size="10"
                         minlength="10" 
                         maxlength="10"
