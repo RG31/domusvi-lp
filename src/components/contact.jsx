@@ -73,7 +73,7 @@ export const Contact = (props) => {
         <div className='container'>
           <div className='col-md-6'>
                 <div className='contact-text'>
-                <h2>3 EHPAD DomusVi</h2>
+                <h2>Les EHPAD DomusVi</h2>
                 <h2 className="contact-text-title2"> en Haute-Garonne (31)</h2>
                 </div>
                 <div id="shadow">
