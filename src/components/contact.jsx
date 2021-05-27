@@ -48,9 +48,9 @@ export const Contact = (props) => {
     emailjs
       .sendForm(
        /* domusvi*/
-       'service_qsp2rj1', 'template_205x3v9', e.target, 'user_M5d2VPZsG9UHjNUkSoVfN' 
+       /*'service_qsp2rj1', 'template_205x3v9', e.target, 'user_M5d2VPZsG9UHjNUkSoVfN' */
         /* RG31*/
-        /*'service_qra7ttk', 'template_kp2u4u3', e.target, 'user_8VEaqn0oNGu7ZWLJwP2Dm'*/
+        'service_qra7ttk', 'template_kp2u4u3', e.target, 'user_8VEaqn0oNGu7ZWLJwP2Dm'
       )
       .then(
         (result) => {
